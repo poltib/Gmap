@@ -2,20 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="dist/styles/main.min.css">
     <title>Polyline on Gmap</title>
 </head>
 <body>
-    <h1>Créez votre tracé!</h1>
-    <div class="map">
-        <div id="close">Close</div>
-        <div id="reset">Reset</div>
-        <div id="dist">dist</div>
-        <div id="map_canvas"></div>
-        <div id="elevation_chart"></div>
-    </div>
+    <main>
+        <h1>Create your track!</h1>
+        <div class="wrapper">
+            <div class="map">
+                <div class="event__actions">
+                    <ul>
+                        <li><button id="close">Close track</button></li>
+                        <li><button id="reset">Clear all</button></li>
+                        <li><button id="back">Undo</button></li>
+                        <li><button id="tiny">Remove last point</button></li>
+                    </ul>
+                </div>
+                <div id="map_canvas"></div>
+            </div>
+            <div class="right">
+                <h3 role="heading" aria-level="3">Informations</h3>
+                <div class="info">
+                    <span class="info__dist">Distance : <span id="dist">dist</span></span>
+                    <div id="elevation_chart"></div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=YOUR_KEY&libraries=geometry&sensor=false" type="text/javascript"></script>
-    <script src="scripts/script.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA9m3Ix3AmZHlnvQCQAIUo4yyFjD7c9eLw&libraries=geometry&sensor=false" type="text/javascript"></script>
+    <script src="dist/scripts/main.min.js"></script>
 </body>
 </html>
