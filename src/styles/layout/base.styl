@@ -1,0 +1,66 @@
+main
+    width 80%
+    margin 0 auto
+    
+.wrapper
+    border 1px solid silver
+    &:after
+        content ""
+        display block
+        clear both
+
+.map .event__actions
+    li
+        width 25%
+        float left
+        &:last-child button
+            border-right none
+    ul
+        width 100%
+        &:after
+            content ""
+            display block
+            clear both
+    button
+        border none
+        border-right 1px solid silver
+        width 100%
+        &:focus
+            outline none
+        border-bottom 1px solid silver
+        background-color white
+        margin 0
+        width 100%
+        display block
+        padding 0.8em
+        font-size 0.9em
+        color black
+        &:hover
+            cursor pointer
+            background-color rgba(236, 240, 241,1.0)
+            color rgba(41, 128, 185,1.0)
+
+.map
+    box-sizing border-box
+    border-right 1px solid silver
+    width 70%
+    float left
+
+#elevation_chart svg g g g g rect
+    stroke-width 0px
+    fill white
+
+#map_canvas
+    height 25em
+
+.info
+    padding 0.8em
+
+.right
+    width 30%
+    float right
+    h3
+        padding 0.34em
+        text-align center
+        background-color silver
+        color white
