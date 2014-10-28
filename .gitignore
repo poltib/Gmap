@@ -59,7 +59,6 @@ npm-debug.log
 # Components #
 ##############
 
-/dist
 /build
 /components
 
